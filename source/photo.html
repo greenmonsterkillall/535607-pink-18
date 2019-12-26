@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Фотографии пользователей</title>
+</head>
+<body>
+  <!-- ==== HEADER START ==== -->
+  <header class="header">
+    <!-- ==== MAIN-NAV START ==== -->
+    <nav class="main-nav">
+      <a class="main-nav__link" href="index.html">
+        <img class="main-nav__logo" src="#" alt="Логотип «Пинк»">
+      </a>
+      <button class="main-nav__toggler" type="button">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ==== MAIN-NAV END ==== -->
+    <h1 class="header__title">Фотографии пользователей</h1>
+  </header>
+  <!-- ==== HEADER END ==== -->
+  <main>
+    <!-- ==== GALLERY START ==== -->
+    <section class="gallery">
+      <h2 class="sr-only">Галерея</h2>
+      <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <div class="post post--panorama">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="#" alt="">
+            </a>
+            <p class="post__author">Анна <span class="post__date">(5 минут назад)</span></p>
+            <p class="post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="post__like">Нравится: 215</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="post">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="https://via.placeholder.com/280x180" alt="">
+            </a>
+            <p class="post__author">Левон <span class="post__date">(5 часов назад)</span></p>
+            <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="post__like">Нравится: 356</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="post">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="https://via.placeholder.com/280x180" alt="">
+            </a>
+            <p class="post__author">Антон <span class="post__date">(12 часов назад)</span></p>
+            <p class="post__text">Соседи будут рады!</p>
+            <p class="post__like">Нравится: 666</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="post">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="https://via.placeholder.com/280x180" alt="">
+            </a>
+            <p class="post__author">Борис <span class="post__date">(20 часов назад)</span></p>
+            <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="post__like">Нравится: 215</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="post">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="https://via.placeholder.com/280x180" alt="">
+            </a>
+            <p class="post__author">Сергей <span class="post__date">(25 часов назад)</span></p>
+            <p class="post__text">Самая кубанская в мире!</p>
+            <p class="post__like">Нравится: 4</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="post">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="https://via.placeholder.com/280x180" alt="">
+            </a>
+            <p class="post__author">Максим <span class="post__date">(40 часов назад)</span></p>
+            <p class="post__text">Где снег-то?</p>
+            <p class="post__like">Нравится: 150</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <div class="post">
+            <a class="post__link" href="#">
+              <img class="post__photo" src="https://via.placeholder.com/280x180" alt="">
+            </a>
+            <p class="post__author">Надежда <span class="post__date">(45 часов назад)</span></p>
+            <p class="post__text">Всем GM и взаимные лайки!</p>
+            <p class="post__like">Нравится: 2560</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- ==== GALLERY END ==== -->
+    <!-- ==== UPLOAD START ==== -->
+    <section class="upload">
+      <h2 class="sr-only">Загрузить фото</h2>
+      <p class="upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="upload__form" action="#" method="post">
+        <img class="upload__preview" src="https://via.placeholder.com/280x374" alt="">
+        <fieldset class="filters">
+          <ul class="filters__list">
+            <li class="filters__item">
+              <input class="filters__range filters__range--crop" type="range">
+            </li>
+            <li class="filters__item">
+              <input class="filters__range filters__range--fill" type="range">
+            </li>
+            <li class="filters__item">
+              <input class="filters__range filters__range--contrast" type="range">
+            </li>
+          </ul>
+        </fieldset>
+        <button class="upload__btn upload__btn--post" type="submit">Запостить</button>
+        <button class="upload__btn upload__btn--reset" type="reset" disabled>Отмена</button>
+      </form>
+    </section>
+    <!-- ==== UPLOAD END ==== -->
+  </main>
+  <!-- ==== FOOTER START ==== -->
+  <footer class="footer">
+    <a class="footer__link" href="index.html">
+      <img class="footer__logo" src="#" alt="Логотип «Пинк»">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="header__icon" src="#" alt="Логотип «Twitter»">
+          Наш Twitter
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="header__icon" src="#" alt="Логотип «Facebook»">
+          Наш Facebook
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="header__icon" src="#" alt="Логотип «Youtube»">
+          Наш Youtube канал
+        </a>
+      </li>
+    </ul>
+    <address class="developer">
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        Разработано
+        <img class="developer__logo" src="#" alt="Логотип «HTML Academy»">
+      </a>
+    </address>
+  </footer>
+  <!-- ==== FOOTER END ==== -->
+</body>
+</html>

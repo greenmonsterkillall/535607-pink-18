@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+</head>
+<body>
+  <!-- ==== HEADER START ==== -->
+  <header class="header">
+    <!-- ==== MAIN-NAV START ==== -->
+    <nav class="main-nav">
+      <a class="main-nav__link" href="index.html">
+        <img class="main-nav__logo" src="#" alt="Логотип «Пинк»">
+      </a>
+      <button class="main-nav__toggler" type="button">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ==== MAIN-NAV END ==== -->
+    <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <!-- ==== HEADER END ==== -->
+  <main>
+    <!-- ==== FORM START ==== -->
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <!-- ==== NAME ==== -->
+      <fieldset class="form__fieldset">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__title" for="surname">Фамилия:</label>
+            <input class="form__field" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
+          </li>
+          <li class="form__item">
+            <label class="form__title" for="name">Имя:</label>
+            <input class="form__field" id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
+          </li>
+          <li class="form__item">
+            <label class="form__title" for="patronymic">Отчество:</label>
+            <input class="form__field" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </li>
+        </ul>
+      </fieldset>
+      <!-- ==== APP ==== -->
+      <fieldset class="form__fieldset">
+        <legend class="form__title">С каким приложением путешествовали?</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="sr-only" id="iOS" type="radio" name="app" value="iOS" checked>
+            <label class="form__radio" for="iOS">Pink для iOS</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="Android" type="radio" name="app" value="Android">
+            <label class="form__radio" for="Android">Pink на Android</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="Windows" type="radio" name="app" value="Windows">
+            <label class="form__radio" for="Windows">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- ==== CONTACTS ==== -->
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Контактная информация</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="form__field" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            <label class="form__title" for="tel">Номер телефона</label>
+          </li>
+          <li class="form__item">
+            <input class="form__field" id="email" type="email" name="email" placeholder="Введите почту *" required>
+            <label class="form__title" for="email">Адрес почты</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- ==== ACHIEVEMENTS ==== -->
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="sr-only" id="shark" type="checkbox" name="achievements" value="shark" checked>
+            <label class="form__check" for="shark">Сделал селфи с акулой</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="norris" type="checkbox" name="achievements" value="norris" checked>
+            <label class="form__check" for="norris">Видел Чака Норриса</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="tower" type="checkbox" name="achievements" value="tower">
+            <label class="form__check" for="tower">Удержал башню</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="sunburn" type="checkbox" name="achievements" value="sunburn" checked>
+            <label class="form__check" for="sunburn">Обгорел на пляже</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="souvenir" type="checkbox" name="achievements" value="souvenir">
+            <label class="form__check" for="souvenir">Накупил сувениров</label>
+          </li>
+          <li class="form__item">
+            <input class="sr-only" id="destruction" type="checkbox" name="achievements" value="destruction">
+            <label class="form__check" for="destruction">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- ==== COMMENT ==== -->
+      <div class="form__fieldset">
+        <label class="form__title" for="comment">Опишите свои эмоции</label>
+        <textarea class="form__field" id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </div>
+      <button class="form__btn" type="submit">Отправить форму</button>
+      <p class="form__necessarily"><span>*</span> — обязательные для заполнения поля</p>
+    </form>
+    <!-- ==== FORM END ==== -->
+    <!-- ==== MODAL START ==== -->
+    <div class="modal modal--error">
+      <p class="modal__title">Что-то пошло не так!</p>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__close">Ok</button>
+    </div>
+    <div class="modal modal--success">
+      <p class="modal__title">Ваша заявка отправлена</p>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="modal__close">Закрыть окно</button>
+    </div>
+    <!-- ==== MODAL END ==== -->
+  </main>
+  <!-- ==== FOOTER START ==== -->
+  <footer class="footer">
+    <a class="footer__link" href="index.html">
+      <img class="footer__logo" src="#" alt="Логотип «Пинк»">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="header__icon" src="#" alt="Логотип «Twitter»">
+          Наш Twitter
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="header__icon" src="#" alt="Логотип «Facebook»">
+          Наш Facebook
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="header__icon" src="#" alt="Логотип «Youtube»">
+          Наш Youtube канал
+        </a>
+      </li>
+    </ul>
+    <address class="developer">
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        Разработано
+        <img class="developer__logo" src="#" alt="Логотип «HTML Academy»">
+      </a>
+    </address>
+  </footer>
+  <!-- ==== FOOTER END ==== -->
+</body>
+</html>
