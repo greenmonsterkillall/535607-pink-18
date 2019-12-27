@@ -15,7 +15,7 @@
       <a class="main-nav__link">
         <img class="main-nav__logo" src="#" alt="Логотип «Пинк»">
       </a>
-      <button class="main-nav__toggler" type="button">Открыть меню</button>
+      <button class="main-nav__toggler" type="button" aria-label="Открыть меню" hidden></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--active">Главная</a>
@@ -92,16 +92,16 @@
       <h2 class="sr-only">Отзывы</h2>
       <ul class="reviews__controls">
         <li class="reviews__control">
-          <button class="reviews__btn reviews__btn--prev" type="button">Вперед</button>
+          <button class="reviews__btn reviews__btn--prev" type="button" aria-label="Вперед"></button>
         </li>
         <li class="reviews__control">
-          <button class="reviews__btn reviews__btn--next" type="button">Назад</button>
+          <button class="reviews__btn reviews__btn--next" type="button" aria-label="Назад"></button>
         </li>
       </ul>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <blockquote class="reviews__text">
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <blockquote class="reviews__quote">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <cite class="reviews__author"><b>Николай Петров</b> 25 лет, водитель трамвая</cite>
           </blockquote>
         </li>
@@ -116,7 +116,7 @@
           <h3 class="pricing__title">База</h3>
           <p class="pricing__cost">1,99 USD</p>
           <ul class="pricing__options">
-            <li class="pricing__option pricing__option--enabled">Розовый фильтр</li>
+            <li class="pricing__option">Розовый фильтр</li>
             <li class="pricing__option pricing__option--disabled">Смайлики</li>
             <li class="pricing__option pricing__option--disabled">Комментарии</li>
           </ul>
@@ -125,8 +125,8 @@
           <h3 class="pricing__title">Стандарт</h3>
            <p class="pricing__cost">3,99 USD</p>
           <ul>
-            <li class="pricing__option pricing__option--enabled">Розовый фильтр</li>
-            <li class="pricing__option pricing__option--enabled">Смайлики</li>
+            <li class="pricing__option">Розовый фильтр</li>
+            <li class="pricing__option">Смайлики</li>
             <li class="pricing__option pricing__option--disabled">Комментарии</li>
           </ul>
         </li>
@@ -134,9 +134,9 @@
           <h3 class="pricing__title">Анлим</h3>
           <p class="pricing__cost">9,99 USD</p>
           <ul>
-            <li class="pricing__option pricing__option--enabled">Розовый фильтр</li>
-            <li class="pricing__option pricing__option--enabled">Смайлики</li>
-            <li class="pricing__option pricing__option--enabled">Комментарии</li>
+            <li class="pricing__option">Розовый фильтр</li>
+            <li class="pricing__option">Смайлики</li>
+            <li class="pricing__option">Комментарии</li>
           </ul>
         </li>
       </ul>
@@ -171,21 +171,18 @@
     </a>
     <ul class="social">
       <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="header__icon" src="#" alt="Логотип «Twitter»">
-          Наш Twitter
+        <a class="social__link" href="#" aria-label="Наш Twitter">
+          <img class="social__icon" src="#" alt="Логотип «Twitter»">
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="header__icon" src="#" alt="Логотип «Facebook»">
-          Наш Facebook
+        <a class="social__link" href="#" aria-label="Наш Facebook">
+          <img class="social__icon" src="#" alt="Логотип «Facebook»">
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="header__icon" src="#" alt="Логотип «Youtube»">
-          Наш Youtube канал
+        <a class="social__link" href="#" aria-label="Наш Youtube канал">
+          <img class="social__icon" src="#" alt="Логотип «Youtube»">
         </a>
       </li>
     </ul>

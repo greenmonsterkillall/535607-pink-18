@@ -14,7 +14,7 @@
       <a class="main-nav__link" href="index.html">
         <img class="main-nav__logo" src="#" alt="Логотип «Пинк»">
       </a>
-      <button class="main-nav__toggler" type="button">Открыть меню</button>
+      <button class="main-nav__toggler" type="button" aria-label="Открыть меню" hidden></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -61,15 +61,15 @@
         <ul class="form__list">
           <li class="form__item">
             <input class="sr-only" id="iOS" type="radio" name="app" value="iOS" checked>
-            <label class="form__radio" for="iOS">Pink для iOS</label>
+            <label class="form__check form__check--radio" for="iOS">Pink для iOS</label>
           </li>
           <li class="form__item">
             <input class="sr-only" id="Android" type="radio" name="app" value="Android">
-            <label class="form__radio" for="Android">Pink на Android</label>
+            <label class="form__check form__check--radio" for="Android">Pink на Android</label>
           </li>
           <li class="form__item">
             <input class="sr-only" id="Windows" type="radio" name="app" value="Windows">
-            <label class="form__radio" for="Windows">Windows Phone</label>
+            <label class="form__check form__check--radio" for="Windows">Windows Phone</label>
           </li>
         </ul>
       </fieldset>
@@ -118,10 +118,10 @@
         </ul>
       </fieldset>
       <!-- ==== COMMENT ==== -->
-      <div class="form__fieldset">
-        <label class="form__title" for="comment">Опишите свои эмоции</label>
+      <fieldset class="form__fieldset">
+        <legend class="form__title">Опишите свои эмоции</legend>
         <textarea class="form__field" id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </div>
+      </fieldset>
       <button class="form__btn" type="submit">Отправить форму</button>
       <p class="form__necessarily"><span>*</span> — обязательные для заполнения поля</p>
     </form>
@@ -146,21 +146,18 @@
     </a>
     <ul class="social">
       <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="header__icon" src="#" alt="Логотип «Twitter»">
-          Наш Twitter
+        <a class="social__link" href="#" aria-label="Наш Twitter">
+          <img class="social__icon" src="#" alt="Логотип «Twitter»">
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="header__icon" src="#" alt="Логотип «Facebook»">
-          Наш Facebook
+        <a class="social__link" href="#" aria-label="Наш Facebook">
+          <img class="social__icon" src="#" alt="Логотип «Facebook»">
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="header__icon" src="#" alt="Логотип «Youtube»">
-          Наш Youtube канал
+        <a class="social__link" href="#" aria-label="Наш Youtube канал">
+          <img class="social__icon" src="#" alt="Логотип «Youtube»">
         </a>
       </li>
     </ul>
